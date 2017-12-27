@@ -1,6 +1,6 @@
 {
   "name": "yu-scroll-top",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "this script builds a DOM that can be clicked back to the top of the page",
   "main": "index.js",
   "scripts": {
