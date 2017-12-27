@@ -1,0 +1,80 @@
+/*省略显示点点点,移动端通用*/
+@mixin ell($line:1){
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+
+#scrollTop{
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  background: rgba(0,0,0,.6);
+  border-radius: 50%;
+  color: white;
+  min-width: 50px;
+  min-height: 50px;
+  text-align: center;
+  z-index: 98;
+  cursor: pointer;
+  font-size: 12px;
+  display: table;
+  line-height: 1.3;
+  padding: 3px;
+  &>*{
+    font-style: normal;
+    display: table-cell;
+    vertical-align: middle;
+    &.iconfont{
+      font-size: 20px;
+      font-style: normal;
+      line-height: 1;
+    }
+  }
+  /*模仿按钮*/
+  &.btnLike{
+    box-shadow: rgba(0,0,0,5) 3px 3px 0;
+    &:active{
+      opacity: 0.8;
+    }
+  }
+  /*有icon有文字*/
+  &.withText{
+    .inner{
+      display: table-cell;
+      vertical-align: middle;
+      &>*{
+        display: block;
+        font-style: normal;
+        i {
+          &.iconfont {
+            &.icon-none {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*hover效果 icon文字切换显示*/
+  &.hover{
+    .text{
+      display: none;
+    }
+    &:hover{
+      .iconfont{
+        display: none;
+      }
+      .text{
+        display: table-cell;
+      }
+    }
+  }
+  /*隐藏*/
+  &.hidden{
+    display: none;
+  }
+}
