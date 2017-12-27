@@ -39,15 +39,15 @@ ScrollTop({
 ## JSDoc
 ```jsdoc
  * @param {object[]} option
- * @param {number} [option[].zIndex = 98'] - the index of dom
+ * @param {number} [option[].zIndex = 98] - the index of dom
  * @param {string} [option[].icon = ''] - the icon of dom if you had use iconfont in you project
  * @param {string} [option[].shape = 'circle'] - the shape of dom , accept 'circle' 'square' & 'rounded-rectangle'
  * @param {string} [option[].background = 'rgba(0,0,0,.6)'] - background of the dom
  * @param {string} [option[].color = '#ffffff'] - color of the dom
- * @param {string} [option[].text = ''] - text of the dom
+ * @param {string} [option[].text = '返回 </br> 顶部'] - text of the dom
  * @param {boolean} [option[].hover = false] - if you set up icon and text you can switch on the hover effect
  * @param {boolean} [option[].btnLike = false] - if you want the dom to looks like a btn
- * @param {boolean} [option[].animation = false] - if you want the animation of scroll
+ * @param {boolean} [option[].animation = true] - if you want the animation of scroll
  * @param {number} [option[].distance = 50] - when should show dom , the scroll distance of screen
  * @param {boolean} [option[].correct = false] - should we correct the Width to height ratio as 1:1
  * @param {object[]} [option[].position = {right:'15px',bottom:'15px'}] - the position of dom
